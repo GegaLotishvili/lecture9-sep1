@@ -1,4 +1,87 @@
-h1 {
-    font-size: 40px;
+header {
+    background-color: lightpink;
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.myheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-size: 60px;
     font-weight: 600;
+}
+
+nav {
+    width: 600px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    font-size: 22px;
+    padding: 5px;
+}
+
+.fa-bars {
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.s-2 {
+    background-color: lightblue;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 250px;
+}
+
+@media (max-width: 1024px) {
+    .s-2 {
+        flex-direction: column;
+    }
+    img {
+        width: 500px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: inline;
+    }
+}
+
+@media (max-width: 550px) {
+    .s-2 {
+        flex-direction: column;
+    }
+    img {
+        width: 300px;
+        margin-bottom: 20px;
+    }
 }
